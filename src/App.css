@@ -7,13 +7,13 @@
         @apply scroll-smooth
     }
     body{
-        @apply leading-[1.5] font-accent text-fs-400 bg-custom-white overflow-x-hidden min-h-screen;
+        @apply leading-[1.5] font-basic text-fs-400 bg-custom-accent overflow-x-hidden min-h-screen mix-blend-darken;
     }
 }
 
 .custom-container{
-    margin-block: 1rem;
-    padding: 1.5rem;
+    margin: 1rem;
+    padding: 1rem;
 }
 
 .custom-divider{

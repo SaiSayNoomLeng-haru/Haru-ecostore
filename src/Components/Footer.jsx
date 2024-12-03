@@ -6,17 +6,23 @@ export default function Footer(){
 
     // classes
     const footerClass = classNames(
-        'custom-container text-fs-300 bg-custom-green text-custom-white grid grid-cols-2 gap-3 font-basic  rounded-t-[2rem]'
+        'custom-container text-fs-300 bg-custom-green text-custom-white grid grid-cols-2 gap-3 font-basic  rounded-t-[2rem] !m-0 md:grid-cols-5'
     )
 
     const linkClass = classNames(
         'hover:text-custom-orange text-fs-300'
     )
+
+    const footerLogo = classNames(
+        'text-center row-span-3 self-center md:row-span-1'
+    )
     return(
         <footer className={footerClass}>
-            <div className="text-center">
+            <div className={footerLogo}>
                 <Link to='/'>
-                    <img src='/assets/images/logo-white.png' />
+                    <img 
+                    src='/assets/images/logo-white.png' 
+                    className="max-w-[100px] mx-auto"/>
                 </Link>
                 Eco-friendly place, where sustainability meets style!
             </div>
@@ -47,7 +53,7 @@ export default function Footer(){
                 <Link className={linkClass} to='contact-us'>Gift sets</Link>
             </div>
 
-            <div className="col-span-full">
+            <div className="col-span-full md:col-span-1">
                 <p className="font-bold text-fs-400">Catalog</p>
                 <p>Phone: +1 123 456 8910</p>
                 <p>Email: example@mail.com</p>
@@ -55,7 +61,7 @@ export default function Footer(){
 
             <div className="custom-divider col-span-full my-2"></div>
             
-            <div className="col-span-full">
+            <div className="col-span-full md:place-self-end">
                 <p>
                     &copy; {new Date().getFullYear()} created by <span className="font-bold text-custom-orange">Sai Say Noom Leng</span>. All rights reserved.
                 </p>
