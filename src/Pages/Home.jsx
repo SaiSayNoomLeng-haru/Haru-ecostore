@@ -1,7 +1,6 @@
 import { memo } from "react";
-import Newsletter from "../Utility Components/newsletter";
+import Newsletter from "../Utility Components/Newsletter";
 import classNames from "classnames";
-import Button from "../Utility Components/Button";
 import CtaLink from "../Utility Components/CtaLink";
 import Banner from "../Utility Components/Banner";
 
@@ -37,7 +36,7 @@ const Home = () => {
 
             <Banner />
 
-            
+
 
             <Newsletter />
         </section>
