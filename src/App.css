@@ -1,3 +1,21 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@layer base{
+    html{
+        @apply scroll-smooth
+    }
+    body{
+        @apply leading-[1.5] font-accent text-fs-400 bg-custom-white overflow-x-hidden min-h-screen;
+    }
+}
+
+.custom-container{
+    margin-block: 1rem;
+    padding: 1.5rem;
+}
+
+.custom-divider{
+    @apply w-3/5 mx-auto h-[2px] bg-white rounded-full
+}
