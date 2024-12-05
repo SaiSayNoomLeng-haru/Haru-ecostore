@@ -38,7 +38,7 @@ export default function Newsletter({className = ''}) {
 
     // classes
     const newsletterClass = classNames(
-        'bg-custom-green grid p-3 rounded-lg text-white gap-2 items-center md:justify-center', className
+        'bg-custom-green grid p-5 md:grid-cols-2 rounded-lg text-white gap-2', className
     )
 
     const inputClass = classNames(
@@ -49,12 +49,13 @@ export default function Newsletter({className = ''}) {
     )
     return(
         <div className={newsletterClass}>
-            <h1 className="font-light text-fs-500 text-center">Your first purchase with <span className="text-custom-orange">10%</span> off</h1>
-            <p className="text-fs-300">Subsribe to our newsletter and get discount on your first purchase</p>
+            <h1 className="font-light text-fs-500 md:text-fs-700 md:col-span-full uppercase font-accent">Your first purchase</h1> 
+            <h1 className="font-light text-fs-500 md:text-fs-700 md:col-start-2 uppercase font-accent">with 10% off</h1>
+            <p className="text-fs-300 md:col-start-1 md:row-start-2 md:place-self-center md:max-w-[50%]">Subsribe to our newsletter and get discount on your first purchase</p>
 
             <form 
                 action="" 
-                className="flex flex-col gap-2 md:flex-row justify-around"
+                className="flex flex-col gap-2 md:flex-row justify-around md:col-span-full md:max-w-[70%] md:justify-center"
                 onSubmit={handleSubmit}>
                 <div className="flex-auto">
                     <input 

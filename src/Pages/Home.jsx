@@ -3,13 +3,14 @@ import Newsletter from "../Utility Components/Newsletter";
 import classNames from "classnames";
 import CtaLink from "../Utility Components/CtaLink";
 import Banner from "../Utility Components/Banner";
+import ProductCard from "../Utility Components/ProductCard/ProductCardIndex";
 
 const Home = () => {
 
 
     // classes
     const homePageClass = classNames(
-        'custom-container'
+        'custom-container space-y-4'
     )
 
     const heroClass = classNames(

@@ -61,7 +61,7 @@ export default function Footer(){
 
             <div className="custom-divider col-span-full my-2"></div>
             
-            <div className="col-span-full md:place-self-end">
+            <div className="col-span-full md:place-self-end place-self-center">
                 <p>
                     &copy; {new Date().getFullYear()} created by <span className="font-bold text-custom-orange">Sai Say Noom Leng</span>. All rights reserved.
                 </p>
